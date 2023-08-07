@@ -1,5 +1,5 @@
-var totalScore, roundScore, activePlayer, dice, playGame;
-var goalScore = 30;
+let totalScore, roundScore, activePlayer, dice, playGame;
+let goalScore = 30;
 let winningScreen = document.getElementById("winning-screen");
 newGame();
 
@@ -35,8 +35,8 @@ function newGame(){
 document.querySelector(".roll-dice").addEventListener("click", function(){
   if(playGame){
     // change image
-    var dice = Math.ceil(Math.random()*6);  
-    var diceElement = document.querySelector(".dice-image");
+    let dice = Math.ceil(Math.random()*6);  
+    let diceElement = document.querySelector(".dice-image");
     diceElement.src = "img/" + dice + ".jpg";
     diceElement.style.visibility = "visible";
   
