@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* whole page */
+.page {
+  height: 100vh;
+  background: linear-gradient(#4bb34d, #21471e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* game board container */
+.container {
+  width: 70%;
+  height: 70%;
+  background: #d1ccb4;
+}
+
+/* player container */
+.container-player {
+  position: relative;
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.player-0,
+.player-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+/* total score*/
+.player-0__total-score,
+.player-1__total-score {
+  padding: 10px 20px;
+  font-size: 30px;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.player-0__total-score p:nth-child(2),
+.player-1__total-score p:nth-child(2) {
+  font-size: 40px;
+}
+
+/* active player */
+.active {
+  color: #fff;
+  background: #268234;
+  border-radius: 20px;
+}
+
+/* current score */
+.player-0__container-current-score,
+.player-1__container-current-score {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  background: #4bb34d;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.player-0__container-current-score p:nth-child(2),
+.player-1__container-current-score p:nth-child(2){
+  font-size: 40px;
+}
+
+/* winning screen */
+#winning-screen {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  color: #fff;
+  font-size: 40px;
+  background: #268234;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  visibility: hidden;
+}
+
+
+/* dice */
+.dice {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/* buttons */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding-top: 100px;
+}
+
+.btn {
+  width: 250px;
+  color: #fff;
+  font-size: 25px;
+  border: 2px solid #000000;
+  background: #2d7c32;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  border: 2px solid #000000;
+  background: #4f9a4b;
+  cursor: pointer;
+}
+
+.btn:active {
+  background: rgb(35, 198, 54);
+}
